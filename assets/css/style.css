@@ -1,0 +1,26 @@
+/* 
+colors:
+
+header, dark: #00171F
+footer, teal: #70A9A1
+yellow text: #fffd98
+faux-white: #cfd7c7
+
+*/
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px 400px 400px 1fr;
+  grid-template-rows: repeat(5, 300px);
+  grid-template-areas:
+    "header header header header header"
+    ". proj1 proj1 proj2 ."
+    ". proj3 proj4 proj5 ."
+    ". proj6 proj7 proj7 ."
+    "footer footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #00171F;
+}
