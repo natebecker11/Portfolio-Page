@@ -7,11 +7,18 @@ yellow text: #fffd98
 faux-white: #cfd7c7
 
 */
+body {
+  background-color: #cfd7c7;
+}
 
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 400px 400px 400px 1fr;
   grid-template-rows: repeat(5, 300px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  justify-items: center;
   grid-template-areas:
     "header header header header header"
     ". proj1 proj1 proj2 ."
@@ -23,4 +30,55 @@ faux-white: #cfd7c7
 .header {
   grid-area: header;
   background-color: #00171F;
+}
+
+.rpg-thumb {
+  grid-area: proj4;
+  background-color: #ffffff;
+}
+
+.word-game{
+  grid-area: proj3;
+  background-color: #ffffff;
+}
+
+.trivia-game {
+  grid-area: proj5;
+  background-color: #ffffff;
+  height: 300px;
+  width: 400px;
+  animation-name: thumbshrink;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+
+  
+}
+
+.trivia-game:hover {
+  animation-name: thumbgrow;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes thumbgrow {
+  from {
+    height: 300px;
+    width: 400px;
+  }
+  to {
+    height: 315px;
+    width: 420px;
+  }
+}
+
+@keyframes thumbshrink {
+  from {
+    height: 315px;
+    width: 420px;
+  }
+  to {
+    height: 300px;
+    width: 400px;
+  }
 }
