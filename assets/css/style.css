@@ -14,9 +14,9 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 400px 400px 400px 1fr;
-  grid-template-rows: repeat(5, 300px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-rows: repeat(5, 500px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   align-items: center;
   justify-items: center;
   grid-template-areas:
@@ -27,10 +27,35 @@ body {
     "footer footer footer footer footer";
 }
 
+.thumb-single {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+}
+
+.thumb-double {
+  width: 820px;
+  height: 500px;
+  background-color: #00171F;
+  opacity: 1;
+  transition: .5s;
+}
+
+.thumb-double:hover {
+  opacity: .9;
+}
+
 .header {
   grid-area: header;
   background-color: #00171F;
 }
+
+.celeb-thumb{
+  grid-area: proj1;
+  background-image: url('../images/celeb-thumb.png');
+  position: relative;
+}
+
 
 .rpg-thumb {
   grid-area: proj4;
@@ -45,22 +70,10 @@ body {
 .trivia-game {
   grid-area: proj5;
   background-color: #ffffff;
-  height: 300px;
-  width: 400px;
-  animation-name: thumbshrink;
-  animation-duration: .5s;
-  animation-fill-mode: forwards;
-
   
 }
 
-.trivia-game:hover {
-  animation-name: thumbgrow;
-  animation-duration: .5s;
-  animation-fill-mode: forwards;
-}
-
-
+/* 
 @keyframes thumbgrow {
   from {
     height: 300px;
@@ -70,8 +83,8 @@ body {
     height: 315px;
     width: 420px;
   }
-}
-
+} */
+/* 
 @keyframes thumbshrink {
   from {
     height: 315px;
@@ -81,4 +94,4 @@ body {
     height: 300px;
     width: 400px;
   }
-}
+} */
