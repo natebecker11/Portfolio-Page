@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5 {
 .thumb-single {
   width: 400px;
   height: 500px;
+  transition: .5s;
 }
 
 .thumb-double {
@@ -59,15 +60,15 @@ h1,h2,h3,h4,h5 {
   opacity: 1;
   transition: .5s;
 }
-
+/* 
 .thumb-double:hover, .thumb-single:hover {
   opacity: .8;
-}
+} */
 
 .thumb-card-double-header {
   position: absolute;
   top: 150px;
-  left: 200px;
+  left: 23%;
   font-size: 200%;
   transition: .5s;
 }
@@ -75,7 +76,11 @@ h1,h2,h3,h4,h5 {
 .thumb-card-single-header {
   position: absolute;
   top: 150px;
-  left: 100px;
+  left: 50px;
+  transition: .5s;
+  width: 300px;
+  text-align: center;
+  
 }
 
 
@@ -88,6 +93,12 @@ h1,h2,h3,h4,h5 {
 .celeb-thumb{
   grid-area: proj1;
   background-image: url('../images/celeb-thumb.png');
+  position: relative;
+}
+
+.cubs-thumb {
+  grid-area: proj2;
+  background-image: url('../images/cubs-thumb.png');
   position: relative;
 }
 
@@ -106,6 +117,64 @@ h1,h2,h3,h4,h5 {
   grid-area: proj5;
   background-color: #ffffff;
   
+}
+
+.url-logo {
+  width: 30.75px;
+  height: 30.75px;
+  opacity: 0;
+  position: absolute;
+  bottom: 150px;
+  left: 41%;
+  background-color: #f6f7f5;
+  border: 2px solid #ef6461;
+  border-radius: 10px;
+  transition: .5s
+
+}
+
+.git-logo {
+  width: 75px;
+  height: 30.75px;
+  opacity: 0;
+  position: absolute;
+  bottom: 150px;
+  left: 51%;
+  background-color: #f6f7f5;
+  border: 2px solid #ef6461;
+  border-radius: 10px;
+  transition: .5s
+
+}
+
+.single .git-logo {
+  left: 200px;
+}
+
+.single .url-logo {
+  left: 130px;
+}
+
+.thumb-text {
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: 225px;
+  color: #ef6461;
+  opacity: 0;
+  transition: .5s
+
+}
+
+.url-logo:hover {
+  width: 33.825px;
+  height: 33.825px;
+}
+
+.git-logo:hover {
+  width: 82.5px;
+  height: 33.825px;
 }
 
 /* 
