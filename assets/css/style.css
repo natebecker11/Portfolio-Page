@@ -5,13 +5,21 @@ header, dark: #00171F
 footer, teal: #70A9A1
 yellow text: #fffd98
 faux-white: #cfd7c7
+blue: #022f40
 
 */
 body {
-  background-color: #cfd7c7;
+  background-color: #f6f7f5;
+  font-family: 'Quattrocento', serif;
+}
+h1,h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cinzel', serif;
 }
 
 .main-grid {
+  color: white;
   display: grid;
   grid-template-columns: 1fr 400px 400px 400px 1fr;
   grid-template-rows: repeat(5, 500px);
@@ -27,23 +35,50 @@ body {
     "footer footer footer footer footer";
 }
 
+.bg-dark {
+  background-color: #00171f;
+
+}
+
+.bg-blue {
+  background-color: #022f40;  
+}
+
+.text-yellow {
+  color: #FFFD98;
+}
+
 .thumb-single {
   width: 400px;
   height: 500px;
-  background-color: white;
 }
 
 .thumb-double {
   width: 820px;
   height: 500px;
-  background-color: #00171F;
   opacity: 1;
   transition: .5s;
 }
 
-.thumb-double:hover {
-  opacity: .9;
+.thumb-double:hover, .thumb-single:hover {
+  opacity: .8;
 }
+
+.thumb-card-double-header {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  font-size: 200%;
+  transition: .5s;
+}
+
+.thumb-card-single-header {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+
 
 .header {
   grid-area: header;
