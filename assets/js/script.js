@@ -33,9 +33,16 @@ const sectTrans = (newC) => {
       oldLink.classList.remove('active-link')
     })
     .then(() => {
+      newBoxes.forEach(item => {
+        item.classList.remove('hidden');
+        
+      })
+      return delay(10)
+    })
+    .then(() => {
       // fade in and display new content, tag as active
       newBoxes.forEach(item => {
-        item.classList.remove('hidden', 'transparent')
+        item.classList.remove('transparent')
         item.classList.add('active-box')
       })
       newLink.classList.add('active-link')

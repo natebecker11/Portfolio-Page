@@ -121,6 +121,7 @@ i:hover {
   opacity: 0;
 }
 
+
 .hidden {
   display: none;
 }
@@ -234,6 +235,28 @@ i:hover {
 .single .git-logo {
   left: 55%;
 }
+
+
+.about-box {
+  transition: .5s;
+}
+
+.natepic-box {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  position: relative;
+}
+
+.nate-pic {
+  position: absolute;
+  width: 275px;
+  height: auto;
+  top: 10px;
+  left: 6px;
+  border-radius: 5px;
+  border: 7px solid #f6f7f5;
+}
+
 .thumb-text {
   text-align: center;
   width: 80%;
