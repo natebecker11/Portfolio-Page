@@ -340,6 +340,10 @@ ul.thumb-text {
 }
 
 
+.contact-box {
+  transition: .5s;
+}
+
 .email-box {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
