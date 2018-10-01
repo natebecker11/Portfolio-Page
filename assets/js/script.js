@@ -44,11 +44,13 @@ const delay = interval => {
 //   })
 // }
 
-// transition to different page
-const sectTrans = (oldC, newC) => {
-  let oldBoxes = document.querySelectorAll(oldC);
-  let newBoxes = document.querySelectorAll(newC);
-  // initializeTrans(oldBoxes, newBoxes, 1000)
+// transition from active page to new page
+const sectTrans = (newC) => {
+  let oldBoxes = document.querySelectorAll('.active-box');
+  let newBoxes = document.querySelectorAll('.' + newC + '-box');
+  let oldLink = document.querySelector('.active-link');
+  let newLink = document.querySelector('.' + newC + '-link');
+
   oldBoxes.forEach(item => {
     item.classList.add('transparent')
   })
@@ -59,9 +61,17 @@ const sectTrans = (oldC, newC) => {
       })
     })
     .then(() => {
+      oldBoxes.forEach(item => {
+        item.classList.remove('active-box')
+      })
+      oldLink.classList.remove('active-link')
+    })
+    .then(() => {
       newBoxes.forEach(item => {
         item.classList.remove('hidden', 'transparent')
+        item.classList.add('active-box')
       })
+      newLink.classList.add('active-link')
     })
 }
 
