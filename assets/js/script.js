@@ -1,49 +1,10 @@
 
-
-
-// event listener for making thumb paragraphs and links appear on hover
-document.querySelectorAll('.thumb-box').forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    item.querySelectorAll('.thumb-header').forEach(item => {
-      item.classList.add('text-accent-color');
-    })
-    // item.querySelector('.thumb-card-single-header').style.color = '#ef6461';
-    item.querySelector('.thumb-bg').style.opacity = .8;
-    item.querySelector('.url-logo').style.opacity = 1;
-    item.querySelector('.git-logo').style.opacity = 1;
-    item.querySelector('.thumb-text').style.opacity = 1;
-  })
-  item.addEventListener('mouseleave', () => {
-    item.querySelectorAll('.thumb-header').forEach(item => {
-      item.classList.remove('text-accent-color');
-    })
-    // item.querySelector('.thumb-card-single-header').style.color = '#ffffff';
-    item.querySelector('.thumb-bg').style.opacity = 1;
-    item.querySelector('.url-logo').style.opacity = 0;
-    item.querySelector('.git-logo').style.opacity = 0;
-    item.querySelector('.thumb-text').style.opacity = 0;
-  })
-})
-
 // function to set a delay between actions
 const delay = interval => {
   return new Promise(resolve => {
     setTimeout(resolve, interval);
   });
 }
-
-// const initializeTrans = (a, b, time) => {
-//   return new Promise((resolve, reject) => {
-//     if (a && b) {
-//       a.forEach(item => {
-//         // console.log(item)
-//         item.classList.add('transparent')
-//       })
-//       setTimeout(resolve(a, b), time)
-//     }
-//     else reject(err);
-//   })
-// }
 
 // transition from active page to new page, taking new page name as parameter
 const sectTrans = (newC) => {
@@ -52,7 +13,6 @@ const sectTrans = (newC) => {
   let newBoxes = document.querySelectorAll('.' + newC + '-box');
   let oldLink = document.querySelector('.active-link');
   let newLink = document.querySelector('.' + newC + '-link');
-
   // fade the old content away
   oldBoxes.forEach(item => {
     item.classList.add('transparent')
@@ -82,3 +42,36 @@ const sectTrans = (newC) => {
     })
 }
 
+
+// event listener for head links
+document.querySelectorAll('.head-link').forEach(item => {
+  item.addEventListener('click', () => {
+    if (!item.classList.contains('active-link')){
+      sectTrans(item.getAttribute('data-name'))
+    }
+  })
+})
+
+// event listener for making thumb paragraphs and links appear on hover
+document.querySelectorAll('.thumb-box').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.querySelectorAll('.thumb-header').forEach(item => {
+      item.classList.add('text-accent-color');
+    })
+    // item.querySelector('.thumb-card-single-header').style.color = '#ef6461';
+    item.querySelector('.thumb-bg').style.opacity = .8;
+    item.querySelector('.url-logo').style.opacity = 1;
+    item.querySelector('.git-logo').style.opacity = 1;
+    item.querySelector('.thumb-text').style.opacity = 1;
+  })
+  item.addEventListener('mouseleave', () => {
+    item.querySelectorAll('.thumb-header').forEach(item => {
+      item.classList.remove('text-accent-color');
+    })
+    // item.querySelector('.thumb-card-single-header').style.color = '#ffffff';
+    item.querySelector('.thumb-bg').style.opacity = 1;
+    item.querySelector('.url-logo').style.opacity = 0;
+    item.querySelector('.git-logo').style.opacity = 0;
+    item.querySelector('.thumb-text').style.opacity = 0;
+  })
+})

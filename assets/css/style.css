@@ -65,7 +65,11 @@ h2,h3,h4,h5 {
 
 .head-link {
   font-family: 'Cinzel', serif;
-  align-self: start;
+  align-self: start;  
+}
+
+.head-link:hover {
+  color: white!important;
 }
 
 
