@@ -143,6 +143,12 @@ i:hover {
   opacity: 1;
   transition: .5s;
 }
+
+.thumb-triple {
+  width: 930px;
+  height: 400px;
+  transition: .5s;
+}
 .thumb-card-double-header {
   position: absolute;
   top: 150px;
@@ -297,6 +303,12 @@ i:hover {
   top: 220px;
 }
 
+i.thumb-text {
+  opacity: 1;
+  color: white;
+  font-size: 200%;
+}
+
 ul.thumb-text {
   text-align: left;
   left: 4%;
@@ -325,6 +337,38 @@ ul.thumb-text {
 .interests-box {
   position: relative;
   grid-area: proj5;
+}
+
+
+.email-box {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  position: relative;
+
+}
+
+.linkedin-box {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  position: relative;
+
+}
+
+.resume-box {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+  position: relative;
+
+}
+
+.thanks-box {
+  grid-column: 3 / 6;
+  grid-row: 4 / 5;
+  position: relative;
+}
+
+.thanks-box h2 {
+  font-size: 280%;
 }
 
 .url-logo:hover {
