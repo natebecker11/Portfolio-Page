@@ -36,6 +36,11 @@ h2,h3,h4,h5 {
   font-family: 'Cinzel', serif;
 }
 
+
+i:hover {
+  color: #ef6461;
+}
+
 .name-header {
   font-family: 'Cinzel', serif;
   font-size: 240%;  
@@ -253,6 +258,33 @@ h2,h3,h4,h5 {
   background-color: #00171f;
   width: 100%;
   height: 100%;
+}
+
+.icon-wrapper {
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+  align-self: start;
+  justify-self: center;
+}
+
+
+.icon-wrapper i {
+  font-size: 36px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.icon-wrapper a {
+  color: white;
+}
+
+.copyright-box {
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+  align-self: end;
+  justify-self: center;
+  text-align: center;
 }
 
 /* 

@@ -36,3 +36,7 @@ body {
 .footer {
   background-color: #062128;
 }
+
+i:hover {
+  color: #d7cf07;
+}
