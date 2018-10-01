@@ -26,6 +26,11 @@ blue: #022f40
   color: #ef6461;
 }
 
+.text-emph {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 body {
   background-color: #f6f7f5;
   font-family: 'Quattrocento', serif;
@@ -274,7 +279,7 @@ i:hover {
   width: 80%;
   position: absolute;
   left: 10%;
-  bottom: 125px;
+  top: 200px;
   color: #ef6461;
   opacity: 0;
   transition: .5s
@@ -283,8 +288,9 @@ i:hover {
 
 .about-box .thumb-text {
   opacity: 1;
-  bottom: 175px;
+  top: 100px;
   color: white;
+  line-height: 1.7em;
 }
 
 .about-box .thumb-card-single-header {
