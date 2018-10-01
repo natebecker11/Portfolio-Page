@@ -293,8 +293,23 @@ i:hover {
   line-height: 1.7em;
 }
 
+.thumb-text.p2 {
+  top: 220px;
+}
+
+ul.thumb-text {
+  text-align: left;
+  left: 4%;
+}
+
 .about-box .thumb-card-single-header {
   top: 10%;
+}
+
+.about-box a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 .cred-box {
