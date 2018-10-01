@@ -82,19 +82,16 @@ h2,h3,h4,h5 {
 
 }
 
-.bg-blue {
+.bg-block1 {
   background-color: #022f40;  
 }
 
-.bg-teal {
+.bg-block2 {
   background-color: #70A9A1;
 }
 
-.text-yellow {
-  color: #FFFD98;
-}
 
-.text-pink {
+.text-accent-color {
   color: #ef6461;
 }
 

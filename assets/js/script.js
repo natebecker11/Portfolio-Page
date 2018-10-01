@@ -2,7 +2,7 @@
 document.querySelectorAll('.thumb-box').forEach(item => {
   item.addEventListener('mouseenter', () => {
     item.querySelectorAll('.thumb-header').forEach(item => {
-      item.style.color = '#ef6461';
+      item.classList.add('text-accent-color');
     })
     // item.querySelector('.thumb-card-single-header').style.color = '#ef6461';
     item.querySelector('.thumb-bg').style.opacity = .8;
@@ -12,7 +12,7 @@ document.querySelectorAll('.thumb-box').forEach(item => {
   })
   item.addEventListener('mouseleave', () => {
     item.querySelectorAll('.thumb-header').forEach(item => {
-      item.style.color = '#ffffff';
+      item.classList.remove('text-accent-color');
     })
     // item.querySelector('.thumb-card-single-header').style.color = '#ffffff';
     item.querySelector('.thumb-bg').style.opacity = 1;
