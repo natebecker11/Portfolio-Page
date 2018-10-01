@@ -184,17 +184,20 @@ i:hover {
 .rpg-thumb {
   grid-area: proj4;
   position: relative;
+  background-image: url('../images/rpg-thumb.png')
 }
 
 .word-thumb{
   grid-area: proj3;
   position: relative;
+  background-image: url('../images/word-thumb.png')
 }
 
 .trivia-thumb {
   grid-area: proj5;
   position: relative;
-  
+  background-image: url('../images/trivia-thumb.png')
+
 }
 
 .url-logo {
