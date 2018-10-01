@@ -25,6 +25,7 @@ document.querySelectorAll('.thumb-box').forEach(item => {
   })
 })
 
+// function to set a delay between actions
 const delay = interval => {
   return new Promise(resolve => {
     setTimeout(resolve, interval);
@@ -44,29 +45,35 @@ const delay = interval => {
 //   })
 // }
 
-// transition from active page to new page
+// transition from active page to new page, taking new page name as parameter
 const sectTrans = (newC) => {
+  // define the current/new page-content/link
   let oldBoxes = document.querySelectorAll('.active-box');
   let newBoxes = document.querySelectorAll('.' + newC + '-box');
   let oldLink = document.querySelector('.active-link');
   let newLink = document.querySelector('.' + newC + '-link');
 
+  // fade the old content away
   oldBoxes.forEach(item => {
     item.classList.add('transparent')
   })
+  // wait .5s
   delay(500)
     .then(() => {
+      // remove from DOM
       oldBoxes.forEach(item => {
         item.classList.add('hidden')
       })
     })
     .then(() => {
+      // remove active status
       oldBoxes.forEach(item => {
         item.classList.remove('active-box')
       })
       oldLink.classList.remove('active-link')
     })
     .then(() => {
+      // fade in and display new content, tag as active
       newBoxes.forEach(item => {
         item.classList.remove('hidden', 'transparent')
         item.classList.add('active-box')
