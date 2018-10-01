@@ -148,6 +148,10 @@ i:hover {
   transition: .5s;
 }
 
+.about-box .thumb-card-double-header {
+  top: 50px;
+}
+
 .thumb-card-single-header {
   position: absolute;
   top: 150px;
@@ -249,13 +253,21 @@ i:hover {
 
 .nate-pic {
   position: absolute;
-  width: 275px;
+  width: 250px;
   height: auto;
-  top: 10px;
-  left: 6px;
+  top: 18px;
+  left: 18.5px;
   border-radius: 5px;
   border: 7px solid #f6f7f5;
 }
+
+.natetext-box {
+  grid-column: 4 / 6;
+  grid-row: 3 / 4;
+  position: relative;
+}
+
+
 
 .thumb-text {
   text-align: center;
@@ -267,6 +279,31 @@ i:hover {
   opacity: 0;
   transition: .5s
 
+}
+
+.about-box .thumb-text {
+  opacity: 1;
+  bottom: 175px;
+  color: white;
+}
+
+.about-box .thumb-card-single-header {
+  top: 10%;
+}
+
+.cred-box {
+  position: relative;
+  grid-area: proj3;
+}
+
+.skills-box {
+  position: relative;
+  grid-area: proj4;
+}
+
+.interests-box {
+  position: relative;
+  grid-area: proj5;
 }
 
 .url-logo:hover {

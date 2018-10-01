@@ -37,7 +37,7 @@ const sectTrans = (newC) => {
         item.classList.remove('hidden');
         
       })
-      return delay(10)
+      return delay(50)
     })
     .then(() => {
       // fade in and display new content, tag as active
