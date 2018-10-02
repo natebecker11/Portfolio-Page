@@ -564,7 +564,7 @@ ul.thumb-text {
     color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 50px repeat(5, 300px) 40px 100px;
+    grid-template-rows: 250px 40px repeat(5, 300px) 40px 100px;
     grid-column-gap: 0;
     grid-row-gap: 20px;
     align-items: center;
@@ -588,7 +588,7 @@ ul.thumb-text {
     color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 50px repeat(4, 300px) 40px 100px;
+    grid-template-rows: 250px 40px repeat(4, 300px) 40px 100px;
     grid-column-gap: 0;
     grid-row-gap: 20px;
     align-items: center;
@@ -610,7 +610,7 @@ ul.thumb-text {
     color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 50px repeat(5, 300px) 40px 100px;
+    grid-template-rows: 250px 40px repeat(3, 300px) 40px 100px;
     grid-column-gap: 0;
     grid-row-gap: 20px;
     align-items: center;
@@ -621,8 +621,6 @@ ul.thumb-text {
       "proj1"
       "proj2"
       "proj3"
-      "proj4"
-      "proj5"
       "."
       "footer"
     ;
@@ -694,7 +692,7 @@ ul.thumb-text {
     opacity: 1!important;
     
   }
-  .thumb-bg {
+  .projects-box .thumb-bg {
     opacity: .8!important;
   }
 
@@ -715,9 +713,10 @@ ul.thumb-text {
 
   .nate-pic {
     width: 90%;
+    max-width: 200px;
     height: auto;
     margin: 0 auto;
-    margin-top: 9%;
+    margin-top: 10px;
   }
   .natetext-box {
     grid-column: 1 / 2;
@@ -774,4 +773,29 @@ ul.thumb-text {
     left: 0%;
     list-style: none;
   }
+
+  .email-box {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .linkedin-box {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .resume-box {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .thanks-box {
+    display: none!important;
+  }
+
+
+
 }
