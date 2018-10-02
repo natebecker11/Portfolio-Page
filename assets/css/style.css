@@ -419,25 +419,137 @@ ul.thumb-text {
   text-align: center;
 }
 
-/* 
-@keyframes thumbgrow {
-  from {
-    height: 300px;
-    width: 400px;
+
+
+@media screen and (max-width: 1500px) {
+
+  .main-grid {
+    grid-template-columns: 1fr 3fr 300px 300px 300px repeat(4, 1fr);
+  }    
+  .projects-link { 
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    justify-self: start;
   }
-  to {
-    height: 315px;
-    width: 420px;
+
+  .about-link {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    justify-self: center;
   }
-} */
-/* 
-@keyframes thumbshrink {
-  from {
-    height: 315px;
-    width: 420px;
+  .contact-link {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    justify-self: end;
   }
-  to {
-    height: 300px;
-    width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .main-grid {
+  grid-template-columns: 1fr 3fr repeat(3, 200px) repeat(4, 1fr);
+  grid-template-rows: 250px 125px repeat(2, 267px) 75px 100px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   }
-} */
+
+  .thumb-single {
+    width: 200px;
+    height: 267px;
+  }
+
+  .thumb-double {
+    width: 415px;
+    height: 267px;
+  }
+
+  .thumb-triple {
+    width: 630px;
+    height: 267px;
+  }
+
+  .name-header {
+    font-size: 180%;
+  }
+
+  .text-header {
+    font-size: 150%;
+  }
+
+  .projects-link {
+    justify-self: end;
+    align-self: start;
+  }
+
+  .about-link {
+    justify-self: end;
+    align-self: start;
+    margin-top: 46px;
+  }
+
+  .contact-link {
+    justify-self: end;
+    align-self: start;
+    margin-top: 76px;
+  }
+
+  .projects-box .thumb-card-single-header {
+    top: 20%;
+    font-size: 120%;
+  }
+
+  .projects-box .thumb-card-double-header {
+    top: 20%;
+    font-size: 160%;
+  }
+
+  .projects-box .thumb-text {
+    top: 40%;
+  }
+  
+  .url-logo {
+    width: 23.06px;
+    height: 23.06px;
+    top: 7%;
+  }
+  
+  .git-logo {
+    width: 56.25px;
+    height: 23.06px;
+    top: 7%;
+
+  }
+
+  .nate-pic {
+    width: 180px;
+    height: auto;
+    top: 5%;
+    left: 5%;
+    border: 1px solid #f6f7f5;
+  }
+
+  .about-box .thumb-text {
+    line-height: 1.5em;
+    font-size: 12px;
+    top: 35%;
+    width: 100%;
+    left: 0;
+  }
+
+  .thumb-text.p2 {
+    top: 60%;
+  }
+
+  ul.thumb-text {
+    left: -5%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .text-emph {
+    font-size: 14px;
+  }
+
+
+
+}
