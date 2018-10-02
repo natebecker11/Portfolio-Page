@@ -13,6 +13,7 @@ const sectTrans = (newC) => {
   let newBoxes = document.querySelectorAll('.' + newC + '-box');
   let oldLink = document.querySelector('.active-link');
   let newLink = document.querySelector('.' + newC + '-link');
+  let mainGrid = document.querySelector('#mainGrid');
   // fade the old content away
   oldBoxes.forEach(item => {
     item.classList.add('transparent')
@@ -23,6 +24,8 @@ const sectTrans = (newC) => {
       // remove from DOM
       oldBoxes.forEach(item => {
         item.classList.add('hidden')
+        mainGrid.className = '';
+        mainGrid.classList.add(newC + '-grid');
       })
     })
     .then(() => {

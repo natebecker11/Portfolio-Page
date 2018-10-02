@@ -95,7 +95,7 @@ i:hover {
   text-decoration: underline;
 }
 
-.main-grid {
+.projects-grid, .about-grid, .contact-grid {
   color: white;
   display: grid;
   grid-template-columns: 1fr 210px 300px 300px 300px 70px 70px 70px 1fr;
@@ -415,7 +415,7 @@ ul.thumb-text {
 
 @media screen and (max-width: 1500px) {
 
-  .main-grid {
+  .projects-grid, .contact-grid, .about-grid {
     grid-template-columns: 1fr 3fr 300px 300px 300px repeat(4, 1fr);
   }    
   .projects-link { 
@@ -438,7 +438,7 @@ ul.thumb-text {
 
 @media screen and (max-width: 1024px) {
 
-  .main-grid {
+  .projects-grid, .contact-grid, .about-grid {
   grid-template-columns: 1fr 3fr repeat(3, 200px) repeat(4, 1fr);
   grid-template-rows: 250px 125px repeat(2, 267px) 75px 100px;
   grid-column-gap: 15px;
@@ -558,7 +558,54 @@ ul.thumb-text {
 
 @media screen and (max-width: 768px) {
 
-  .main-grid {
+  .projcets-grid {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 50px repeat(5, 300px) 40px 100px;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "header"
+      "."
+      "proj1"
+      "proj2"
+      "proj3"
+      "proj4"
+      "proj5"
+      "."
+      "footer"
+    ;
+  }
+
+  .about-grid {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 50px repeat(5, 300px) 40px 100px;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "header"
+      "."
+      "proj1"
+      "proj2"
+      "proj3"
+      "proj4"
+      "proj5"
+      "."
+      "footer"
+    ;
+  }
+  .contact-grid {
     width: 100%;
     height: 100%;
     color: white;
@@ -658,5 +705,40 @@ ul.thumb-text {
 
   .copyright-box {
     grid-area: footer;
+  }
+
+  .natepic-box {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: start;
+    width: 49%;    
+  }
+
+  .nate-pic {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 9%;
+  }
+  .natetext-box {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    justify-self: end;
+    width: 49%;
+  }
+
+  .natetext-box .thumb-card-double-header {
+    font-size: 140%;
+    top: 15%;
+  }
+
+  .natetext-box .p1 {
+    top: 35%;
+    line-height: 1.2em;
+  }
+
+  .natetext-box .p2 {
+    top: 70%;
+    line-height: 1.2em;
   }
 }
