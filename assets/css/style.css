@@ -204,7 +204,7 @@ i:hover {
 .trivia-thumb {
   grid-area: proj5;
   position: relative;
-  background-image: url('../images/trivia-thumb.png')
+  /* background-image: url('../images/trivia-thumb.png') */
 
 }
 
