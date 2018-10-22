@@ -192,7 +192,7 @@ i:hover {
 .rpg-thumb {
   grid-area: proj4;
   position: relative;
-  background-image: url('../images/rpg-thumb.png')
+  /* background-image: url('../images/rpg-thumb.png') */
 }
 
 .word-thumb{
