@@ -95,7 +95,7 @@ i:hover {
   text-decoration: underline;
 }
 
-.projects-grid, .about-grid, .contact-grid {
+.about-grid, .contact-grid {
   color: white;
   display: grid;
   grid-template-columns: 1fr 210px 300px 300px 300px 70px 70px 70px 1fr;
@@ -109,6 +109,26 @@ i:hover {
     "header header header header header header header header header"
     "...... ...... proj1  proj1  proj2  ...... ...... ...... ......"
     "...... ...... proj3  proj4  proj5 ...... ...... ...... ......"
+    ". . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer";
+}
+
+.projects-grid {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 210px 300px 300px 300px 70px 70px 70px 1fr;
+  grid-template-rows: 250px 125px repeat(4, 400px) 150px 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "header header header header header header header header header"
+    "header header header header header header header header header"
+    "...... ...... proj1  proj1  proj2  ...... ...... ...... ......"
+    "...... ...... proj3  proj4  proj5  ...... ...... ...... ......"
+    "...... ...... proj6  proj7  proj7  ...... ...... ...... ......"
+    "...... ...... proj9  proj10 proj11 ...... ...... ...... ......"
     ". . . . . . . . ."
     "footer footer footer footer footer footer footer footer footer";
 }
@@ -177,36 +197,87 @@ i:hover {
 }
 
 .celeb-thumb{
-  grid-area: proj1;
   background-image: url('../images/celeb-thumb.png');
-  position: relative;
 }
 
-.cubs-thumb {
-  grid-area: proj2;
+.burger-thumb {
   background-image: url('../images/burger-thumb.png');
-  position: relative;
 }
-
 
 .rpg-thumb {
-  grid-area: proj4;
-  position: relative;
-  /* background-image: url('../images/rpg-thumb.png') */
+  background-image: url('../images/rpg-thumb.png')
 }
 
 .word-thumb{
-  grid-area: proj3;
-  position: relative;
   background-image: url('../images/word-thumb.png')
 }
 
 .trivia-thumb {
+  background-image: url('../images/trivia-thumb.png')
+}
+
+.cubs-thumb {
+  background-image: url('../images/cubs-thumb.png')
+}
+
+.proj1 {
+  grid-area: proj1;
+  position: relative;
+}
+
+.proj2 {
+  grid-area: proj2;
+  position: relative;
+}
+
+.proj3 {
+  grid-area: proj3;
+  position: relative;
+}
+
+.proj4 {
+  grid-area: proj4;
+  position: relative;
+}
+
+.proj5 {
   grid-area: proj5;
   position: relative;
-  /* background-image: url('../images/trivia-thumb.png') */
-
 }
+
+.proj6 {
+  grid-area: proj6;
+  position: relative;
+}
+
+.proj7 {
+  grid-area: proj7;
+  position: relative;
+}
+
+/* .proj8 {
+  grid-area: proj8;
+  position: relative;
+} */
+
+.proj9 {
+  grid-area: proj9;
+  position: relative;
+}
+
+.proj10 {
+  grid-area: proj10;
+  position: relative;
+}
+
+.proj11 {
+  grid-area: proj11;
+  position: relative;
+}
+
+
+
+
 
 .url-logo {
   width: 30.75px;
@@ -385,8 +456,8 @@ ul.thumb-text {
 }
 
 .icon-wrapper {
+  grid-area: footer;
   grid-column: 4 / 5;
-  grid-row: 6 / 7;
   align-self: start;
   justify-self: center;
 }
@@ -404,8 +475,8 @@ ul.thumb-text {
 }
 
 .copyright-box {
+  grid-area: footer;
   grid-column: 4 / 5;
-  grid-row: 6 / 7;
   align-self: end;
   justify-self: center;
   text-align: center;
