@@ -220,6 +220,10 @@ i:hover {
   background-image: url('../images/cubs-thumb.png')
 }
 
+.portfoliate-thumb {
+  background-image: url('../images/portfoliate-thumb.png')
+}
+
 .proj1 {
   grid-area: proj1;
   position: relative;
@@ -516,6 +520,11 @@ ul.thumb-text {
   grid-row-gap: 15px;
   }
 
+  .projects-grid {
+    grid-template-rows: 250px 125px repeat(4, 267px) 75px 100px;
+
+  }
+
   .thumb-single {
     width: 200px;
     height: 267px;
@@ -635,7 +644,7 @@ ul.thumb-text {
     color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 40px repeat(5, 300px) 40px 100px;
+    grid-template-rows: 250px 40px repeat(10, 300px) 40px 100px;
     grid-column-gap: 0;
     grid-row-gap: 20px;
     align-items: center;
@@ -648,6 +657,11 @@ ul.thumb-text {
       "proj3"
       "proj4"
       "proj5"
+      "proj6"
+      "proj7"
+      "proj9"
+      "proj10"
+      "proj11"
       "."
       "footer"
     ;
@@ -725,6 +739,10 @@ ul.thumb-text {
 
   }
   
+  .projects-box .thumb-card-double-header, .projects-box .thumb-card-single-header {
+    font-size: 100%;
+  }
+
   .head-link {
     align-self: end;
     
@@ -759,7 +777,7 @@ ul.thumb-text {
   }  
   .url-logo, .single .url-logo {
     top: 33%;
-    left: 40%;
+    left: 30%;
     opacity: 1!important;
     
   }
@@ -831,10 +849,11 @@ ul.thumb-text {
   }
 
   .cred-box .thumb-text {
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
-    left: 20%;
+    /* left: 20%; */
+    list-style: none;
   }
 
   .skills-box .thumb-text, .interests-box .thumb-text {
