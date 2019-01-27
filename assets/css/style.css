@@ -224,6 +224,10 @@ i:hover {
   background-image: url('../images/portfoliate-thumb.png')
 }
 
+.manager-thumb {
+  background-image: url('../images/manager-thumb.png')
+}
+
 .proj1 {
   grid-area: proj1;
   position: relative;
